@@ -1,29 +1,7 @@
+# JSFuck for KubeJS
 
-Installation information
-=======
+1.在 [JSFuck 编码器](https://jsfuck.com/) 输入 KubeJS 代码，例如 `console.info("JSFuck loaded")`。勾选 **Eval Source**。
+2.将编码结果保存为 `kubejs/startup_scripts/hello.js`，重启后在 KubeJS 启动日志里查看输出。服务端事件脚本和客户端脚本照常放在对应的 `server_scripts` 和 `client_scripts` 目录。
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+支持官网编码器和历史版的 `at`、`flat`、`fill`、`filter` 包装。启用 **Run In Parent Scope** 时，请把完整的六字符输出保存为单独的脚本，解码出的顶层声明进入当前 KubeJS 的全局作用域。原始脚本使用 KubeJS 的 API 和 Rhino 支持的 JavaScript 语法。
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
-
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
-
-Mapping Names:
-============
-The MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
-
-MDG Legacy:
-==========
-This template uses [ModDevGradle Legacy](https://github.com/neoforged/ModDevGradle). Documentation can be found [here](https://github.com/neoforged/ModDevGradle/blob/main/LEGACY.md).
-
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/

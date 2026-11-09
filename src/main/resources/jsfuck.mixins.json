@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.y71727uy.jsfuck.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ScriptManagerMixin",
+    "ScriptFileMixin",
+    "NativeGlobalMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
